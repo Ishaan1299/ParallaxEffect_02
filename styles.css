@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    height: 100vh;
+    width: 100vw;
+    perspective: 10px;
+    overflow-x: hidden;
+}
+.container{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    z-index: -1;
+
+}
+
+.background, .foreground{
+    position: absolute; 
+    object-fit: cover;
+    z-index: -1;
+}
+.background{
+    width: 100%;
+    transform: translateZ(-40px) scale(5);
+ 
+}
+.foreground{
+    width: 30%;
+    top: 40%;
+    transform: translateZ(-10px) scale(2.3);
+}
+
+.bg{
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 500px;
+    width: 100%;
+    
+}
+
+.bg1{
+    background-image: url(skills.jpeg);
+}
+
+.bg2{
+    background-image: url(activities.webp);
+}
+
+.bg3{
+    background-image: url(goals.jpg);
+}
+
+h1 {
+    position: absolute;
+    top: 5rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 10rem;
+    letter-spacing: 4px;
+    color:#7CB9E8;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+section {
+    background-color: #0039a6;
+    color: #F0F8FF;
+    padding: 5rem 0;
+}
+
+.secondheading {
+    font-size: 5rem;
+    padding: 0 10rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.para {
+    font-size: 1.5rem;
+    padding: 0 10rem;
+    margin: 5rem 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+.desc1, .desc2, .desc3 {
+    position: absolute;
+    background-color: white;
+    padding: 0.5rem 2.5rem;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: black;
+    font-size: 3.5rem;
+    font-weight: 600;
+    border-radius: 15px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.desc1:hover{
+    background-color: #007FFF;
+   
+}
+.desc2:hover {
+    background-color: #32de84;
+   
+}
+.desc3:hover {
+    background-color:#48D1CC;
+    
+}
